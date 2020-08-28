@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" id="tema" class="claro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Class01</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="img/logo.png"></div>
+        <a href="#"><div class="dohover">Home</div></a>
+        <a href="#"><div class="dohover">About Us</div></a>
+        <a href="#"><div class="dohover">Services</div></a>
+        <a href="#"><div class="dohover">Contact</div></a>
+    </nav>
+    <div class="selector">
+        <a onclick="myFunctionClaro()">Claro</a> | <a onclick="myFunctionOscuro()">Obscuro</a>
+    </div>
+    <div class="bod">
+        <div>
+            <h2>Col 1</h2>
+            <img src="img/imagen1.jpg">
+            <p>Maecenas et posuere felis, in sagittis dolor. Vestibulum volutpat lobortis tempus. Phasellus aliquet enim est, vel suscipit sem ultrices ut. Pellentesque lacinia dictum felis, ornare interdum leo convallis porta. Ut pharetra vitae sem eu tempus. Donec volutpat sit amet risus sit amet sodales. Vivamus ut consectetur ex. Sed vitae fermentum arcu.</p>
+        </div>
+        <div>
+            <h2>Col 2</h2>
+            <p>Nam suscipit, magna non rutrum faucibus, massa ipsum placerat ligula, eget blandit augue enim id mi. Nam eu elementum augue. Pellentesque semper suscipit purus. Nam nisl magna, faucibus ut bibendum vel, dictum et massa. Integer sit amet maximus ligula. Maecenas velit mi, sagittis ac porttitor et, laoreet id mi. Sed ac posuere tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut in tellus magna. Nam rhoncus justo ut libero facilisis blandit. Aenean nec dolor arcu. Vivamus condimentum pulvinar erat, at malesuada risus varius vitae. Praesent fermentum nunc ex, a tincidunt justo hendrerit non. Donec in interdum leo. Donec a lacinia nisi, nec faucibus purus.</p>
+        </div>
+        <div>
+            <h2>Col 3</h2>
+            <p>Vestibulum maximus mattis leo volutpat volutpat. Sed fringilla nisi arcu. Nullam risus dui, luctus vel velit sed, euismod ultrices libero. Ut vehicula finibus sagittis. Cras fermentum gravida efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris malesuada neque sit amet lectus iaculis, id convallis metus viverra. Quisque leo lectus, sollicitudin sit amet mauris id, accumsan porta justo. Vestibulum et commodo nunc. Donec tempus cursus mattis. Vivamus vel tortor id tellus faucibus mattis.</p>
+        </div>
+    </div>
+    <div class="footer">
+        Copyright 2020 All rights reserved
+    </div>
+
+    <script type="text/javascript">
+        function myFunctionOscuro(){
+            var element = document.getElementById("tema");
+            element.classList.remove("claro");
+            element.classList.add("oscuro");		
+        }	
+        
+        function myFunctionClaro(){
+            var element = document.getElementById("tema");
+            element.classList.remove("oscuro");
+            element.classList.add("claro");
+        }
+    </script>
+</body>
+</html>
